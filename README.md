@@ -38,7 +38,7 @@ DROP       all  --  quetzalcoatl-relays.org  anywhere
 .
 
 # Paranoid mode
-disable all traffics that do not go through the Tor service
+disable all traffic that do not go through the Tor service
 
 `sudo ufw default deny outgoing`\
 `sudo ufw allow out 9050/tcp`\
