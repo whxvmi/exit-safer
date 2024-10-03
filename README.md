@@ -10,18 +10,18 @@ drop all (possible) exit node address with iptables
 
 # Results
 `sudo iptables --list-rules`
-`-A OUTPUT -d 204.8.96.185/32 -j DROP`
-`-A OUTPUT -d 204.8.96.186/32 -j DROP`
-`-A OUTPUT -d 204.8.96.187/32 -j DROP`
-`-A OUTPUT -d 204.8.96.188/32 -j DROP`
-`-A OUTPUT -d 204.8.96.189/32 -j DROP`
-`-A OUTPUT -d 204.8.96.64/32 -j DROP`
-`-A OUTPUT -d 204.8.96.65/32 -j DROP`
-`...`
-`..`
-`.`
+-A OUTPUT -d 204.8.96.185/32 -j DROP
+-A OUTPUT -d 204.8.96.186/32 -j DROP
+-A OUTPUT -d 204.8.96.187/32 -j DROP
+-A OUTPUT -d 204.8.96.188/32 -j DROP
+-A OUTPUT -d 204.8.96.189/32 -j DROP
+-A OUTPUT -d 204.8.96.64/32 -j DROP
+-A OUTPUT -d 204.8.96.65/32 -j DROP
+...
+..
+.
 `sudo iptables -L`
-`Chain INPUT (policy ACCEPT)
+Chain INPUT (policy ACCEPT)
 target     prot opt source               destination         
 DROP       all  --  102.130.113.9        anywhere            
 DROP       all  --  sortie-tor.a-n-o-n-y-m-e.net  anywhere            
@@ -43,9 +43,9 @@ DROP       all  --  this-is-a-tor-exit   anywhere
 DROP       all  --  ip-104-219-232-126.host.datawagon.net  anywhere            
 DROP       all  --  ip-104-219-236-100.host.datawagon.net  anywhere            
 DROP       all  --  tor-exit-hermes.greektor.com  anywhere            
-DROP       all  --  quetzalcoatl-relays.org  anywhere     `  
-`...`
-`..`
-`.`
+DROP       all  --  quetzalcoatl-relays.org  anywhere     
+...
+..
+.
 
 
