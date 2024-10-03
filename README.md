@@ -9,56 +9,43 @@ drop all (possible) exit node address with iptables
 `./exit-safer.sh` or `proxychains4 ./exit-safer.sh` 
 
 # Results
+`sudo iptables --list-rules`
+`-A OUTPUT -d 204.8.96.185/32 -j DROP`
+`-A OUTPUT -d 204.8.96.186/32 -j DROP`
+`-A OUTPUT -d 204.8.96.187/32 -j DROP`
+`-A OUTPUT -d 204.8.96.188/32 -j DROP`
+`-A OUTPUT -d 204.8.96.189/32 -j DROP`
+`-A OUTPUT -d 204.8.96.64/32 -j DROP`
+`-A OUTPUT -d 204.8.96.65/32 -j DROP`
+`...`
+`..`
+`.`
 `sudo iptables -L`
-`
--A OUTPUT -d 204.8.96.185/32 -j DROP
--A OUTPUT -d 204.8.96.186/32 -j DROP
--A OUTPUT -d 204.8.96.187/32 -j DROP
--A OUTPUT -d 204.8.96.188/32 -j DROP
--A OUTPUT -d 204.8.96.189/32 -j DROP
--A OUTPUT -d 204.8.96.64/32 -j DROP
--A OUTPUT -d 204.8.96.65/32 -j DROP
--A OUTPUT -d 204.8.96.66/32 -j DROP
--A OUTPUT -d 204.8.96.67/32 -j DROP
--A OUTPUT -d 204.8.96.68/32 -j DROP
--A OUTPUT -d 204.8.96.69/32 -j DROP
--A OUTPUT -d 204.8.96.70/32 -j DROP
--A OUTPUT -d 204.8.96.71/32 -j DROP
--A OUTPUT -d 204.8.96.72/32 -j DROP
--A OUTPUT -d 204.8.96.73/32 -j DROP
--A OUTPUT -d 204.8.96.74/32 -j DROP
--A OUTPUT -d 204.8.96.75/32 -j DROP
--A OUTPUT -d 204.8.96.76/32 -j DROP
--A OUTPUT -d 204.8.96.77/32 -j DROP
--A OUTPUT -d 204.8.96.78/32 -j DROP
--A OUTPUT -d 204.8.96.79/32 -j DROP
--A OUTPUT -d 204.8.96.80/32 -j DROP
--A OUTPUT -d 204.8.96.81/32 -j DROP
--A OUTPUT -d 204.8.96.82/32 -j DROP
--A OUTPUT -d 204.8.96.83/32 -j DROP
--A OUTPUT -d 204.8.96.84/32 -j DROP
--A OUTPUT -d 204.8.96.85/32 -j DROP
--A OUTPUT -d 204.8.96.86/32 -j DROP
--A OUTPUT -d 204.8.96.87/32 -j DROP
--A OUTPUT -d 204.8.96.88/32 -j DROP
--A OUTPUT -d 204.8.96.89/32 -j DROP
--A OUTPUT -d 205.185.113.180/32 -j DROP
--A OUTPUT -d 205.185.113.85/32 -j DROP
--A OUTPUT -d 205.185.116.34/32 -j DROP
--A OUTPUT -d 205.185.117.149/32 -j DROP
--A OUTPUT -d 205.185.119.35/32 -j DROP
--A OUTPUT -d 205.185.121.170/32 -j DROP
--A OUTPUT -d 205.185.123.93/32 -j DROP
--A OUTPUT -d 205.185.124.176/32 -j DROP
--A OUTPUT -d 205.185.124.193/32 -j DROP
--A OUTPUT -d 205.185.127.231/32 -j DROP
--A OUTPUT -d 207.192.70.250/32 -j DROP
--A OUTPUT -d 209.141.32.181/32 -j DROP
--A OUTPUT -d 209.141.32.198/32 -j DROP
--A OUTPUT -d 209.141.36.191/32 -j DROP
--A OUTPUT -d 209.141.36.247/32 -j DROP
--A OUTPUT -d 209.141.37.94/32 -j DROP
-...
-..
-.`
+`Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+DROP       all  --  102.130.113.9        anywhere            
+DROP       all  --  sortie-tor.a-n-o-n-y-m-e.net  anywhere            
+DROP       all  --  102.130.127.117      anywhere            
+DROP       all  --  103.109.101.105      anywhere            
+DROP       all  --  103.126.161.54       anywhere            
+DROP       all  --  zlisianthus.com      anywhere            
+DROP       all  --  sortie-tor.a-n-o-n-y-m-e.net  anywhere            
+DROP       all  --  tor.fmt.53labs.com   anywhere            
+DROP       all  --  zexit.tor.ac.nz      anywhere            
+DROP       all  --  this-is-a-TOR-EXIT-NODE.union  anywhere            
+DROP       all  --  103.251.167.20       anywhere            
+DROP       all  --  ip103-28-52-93.cloudhost.web.id  anywhere            
+DROP       all  --  104.167.242.116      anywhere            
+DROP       all  --  104.167.242.117      anywhere            
+DROP       all  --  104.167.242.118      anywhere            
+DROP       all  --  ip-104-192-1-138.host.datawagon.net  anywhere            
+DROP       all  --  this-is-a-tor-exit   anywhere            
+DROP       all  --  ip-104-219-232-126.host.datawagon.net  anywhere            
+DROP       all  --  ip-104-219-236-100.host.datawagon.net  anywhere            
+DROP       all  --  tor-exit-hermes.greektor.com  anywhere            
+DROP       all  --  quetzalcoatl-relays.org  anywhere     `  
+`...`
+`..`
+`.`
+
 
