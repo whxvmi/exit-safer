@@ -9,17 +9,6 @@ drop all (possible) exit node address with iptables
 `./exit-safer.sh` or `proxychains4 ./exit-safer.sh` 
 
 # Results
-`sudo iptables --list-rules`
--A OUTPUT -d 204.8.96.185/32 -j DROP
--A OUTPUT -d 204.8.96.186/32 -j DROP
--A OUTPUT -d 204.8.96.187/32 -j DROP
--A OUTPUT -d 204.8.96.188/32 -j DROP
--A OUTPUT -d 204.8.96.189/32 -j DROP
--A OUTPUT -d 204.8.96.64/32 -j DROP
--A OUTPUT -d 204.8.96.65/32 -j DROP
-...
-..
-.
 `sudo iptables -L`
 Chain INPUT (policy ACCEPT)
 target     prot opt source               destination         
