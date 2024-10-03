@@ -1,5 +1,5 @@
 # exit-safer
-drop all (possible) exit node address with iptables
+drop list of exit node address with iptables
 
 # Prep
 `pacman -S proxychains4 iptables`
