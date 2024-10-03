@@ -9,7 +9,7 @@ drop all (possible) exit node address with iptables
 `./exit-safer.sh` or `proxychains4 ./exit-safer.sh` 
 
 # Results
-`sudo iptables -L`
+`sudo iptables -L`\
 Chain INPUT (policy ACCEPT)
 target     prot opt source               destination         
 DROP       all  --  102.130.113.9        anywhere            
